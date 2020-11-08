@@ -11,7 +11,7 @@ refs.searchInput.addEventListener('input', debounce(searchInputHandler, 500));
 
 
 function searchInputHandler(e) {
-    let inputValue = e.target.value;
+    const inputValue = e.target.value;
 
     refs.countriesContainer.innerHTML = '';
     refs.countriesList.innerHTML = '';
